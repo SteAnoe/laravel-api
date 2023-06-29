@@ -18,4 +18,5 @@ use App\Http\Controllers\Api\ProjectController;
 // });
 
 route::get('/projects', [ProjectController::class, 'index']);
+route::get('/projects/{slug}', [ProjectController::class, 'show']);
 
