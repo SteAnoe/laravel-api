@@ -3,6 +3,9 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ProjectController;
+use App\Http\Controllers\Api\TypeController;
+use App\Http\Controllers\Api\TechnologyController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,4 +22,6 @@ use App\Http\Controllers\Api\ProjectController;
 
 route::get('/projects', [ProjectController::class, 'index']);
 route::get('/projects/{slug}', [ProjectController::class, 'show']);
+route::get('/types', [TypeController::class, 'index']);
+route::get('/technologies', [TechnologyController::class, 'index']);
 
